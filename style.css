@@ -1,18 +1,113 @@
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
 .top-bit {
-    background-color: #1F2937
+    display: flex;
+    background-color: #1F2937;
+    flex-direction: column;
+    flex: 1;
 }
 
 h1 {
     color: #f9faf8;
     font-size: 48px;
     font-weight: extra-bold;
+    
 }
 
-li, p {
-    color:#e5e7eb
+li {
+    color:#e5e7eb;
+    padding: 10px;
+}
+
+p {
+    color:#e5e7eb;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
 }
 
 .logo-text {
+    display: flex;
+justify-content: flex-start;
 font-size: 24px;
 color: #f9faf8;
+margin-left: 30px;
+}
+
+.top-right {
+display: flex;
+justify-content: flex-end;
+list-style-type: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+
+}
+
+.chunk {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    align-items: flex-start;
+}
+
+button {
+    color: #3882f6;
+     max-width: 200px;
+}
+
+.main-image {
+    display: flex;
+    padding: 15px;
+}
+
+.gallery-section {
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.gallery-info {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    justify-content: center;
+    
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.example {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+}
+
+.annotation {
+    font-size: 18px;
+    color: #e5e7eb
+}
+
+.cute  {
+    border: 1px solid #3882f6;
+border-radius: 20%;
 }
